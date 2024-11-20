@@ -52,6 +52,10 @@
 
                                     {{-- 1st row --}}
                                     <div class="col-lg-4">
+                                        <label for="first_name" class="form-label required">Id Number</label>
+                                        <input type="number" name="employee_no" class="form-control" id="first_name">
+                                    </div>
+                                    <div class="col-lg-4">
                                         <label for="first_name" class="form-label required">First Name</label>
                                         <input type="text" name="first_name" class="form-control" id="first_name">
                                     </div>
@@ -59,13 +63,15 @@
                                         <label for="last_name" class="form-label required">Last Name</label>
                                         <input type="text" name="last_name" class="form-control" id="last_name">
                                     </div>
-                                    <div class="col-lg-4">
+
+
+                                    <div class="col-lg-6">
                                         <label for="middle_name" class="form-label">Middle Name</label>
                                         <input type="text" name="middle_name" class="form-control" id="middle_name">
                                     </div>
 
                                     {{-- 2nd row --}}
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <label for="inputState" class="form-label required">Gender</label>
                                         <select id="inputState" class="form-select">
                                             <option selected>---</option>
@@ -74,12 +80,12 @@
                                         </select>
                                     </div>
 
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <label for="birthday" class="form-label required">Birth Date</label>
                                         <input type="date" name="birthday" class="form-control" id="birthday">
                                     </div>
 
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <label for="inputState" class="form-label required">Marital Status</label>
                                         <select id="inputState" class="form-select">
                                             <option selected>---</option>
