@@ -17,10 +17,7 @@
             </nav>
         </div><!-- End Page Title -->
 
-
         <!-- Button trigger modal -->
-
-
 
 
 
@@ -48,12 +45,12 @@
 
                             <!-- Modal Body -->
                             <div class="modal-body">
-                                <form class="row g-3 p-4">
+                                <form class="row g-3 p-4" method="POST">
 
                                     {{-- 1st row --}}
                                     <div class="col-lg-4">
-                                        <label for="first_name" class="form-label required">Id Number</label>
-                                        <input type="number" name="employee_no" class="form-control" id="first_name">
+                                        <label for="employee_no" class="form-label required">Id Number</label>
+                                        <input type="number" name="employee_no" class="form-control" id="employee_no">
                                     </div>
                                     <div class="col-lg-4">
                                         <label for="first_name" class="form-label required">First Name</label>
@@ -72,11 +69,11 @@
 
                                     {{-- 2nd row --}}
                                     <div class="col-lg-6">
-                                        <label for="inputState" class="form-label required">Gender</label>
-                                        <select id="inputState" class="form-select">
+                                        <label for="gender" class="form-label required">Gender</label>
+                                        <select id="gender" name="gender" class="form-select">
                                             <option selected>---</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
                                         </select>
                                     </div>
 
@@ -86,13 +83,14 @@
                                     </div>
 
                                     <div class="col-lg-6">
-                                        <label for="inputState" class="form-label required">Marital Status</label>
-                                        <select id="inputState" class="form-select">
+                                        <label for="marital_status" class="form-label required">Marital Status</label>
+                                        <select id="marital_status" name="marital_status" class="form-select">
                                             <option selected>---</option>
-                                            <option>Single</option>
-                                            <option>Micro Cheater</option>
-                                            <option>Kabet</option>
-                                            <option>Widowed</option>
+                                            <option value="Single" >Single | Never Married</option>
+                                            <option value="Married">Married</option>
+                                            <option value="Separated">Separated</option>
+                                            <option value="Widowed">Widowed</option>
+                                            <option value="Divorced">Divorced</option>
                                         </select>
                                     </div>
 
@@ -100,7 +98,7 @@
                                     {{-- 3rd Row --}}
                                     <div class="col-lg-12">
                                         <label for="address" class="form-label required">Address</label>
-                                        <input type="text" name="addressv" class="form-control" id="address">
+                                        <input type="text" name="address" class="form-control" id="address">
                                     </div>
 
                                     {{-- <hr class="my-5"> --}}
@@ -115,38 +113,46 @@
                                         <label for="inputState" class="form-label required">Payroll Position</label>
                                         <select id="inputState" class="form-select">
                                             <option selected>---</option>
-                                            <option>Null</option>
-                                            <option>Null</option>
-                                            <option>Null</option>
-                                            <option>Null</option>
+                                            <option value="Director IV">Director IV</option>
+                                            <option value="Chief Administrative Officer">Chief Administrative Officer</option>
+                                            <option value="Supervising Education Program Specialist">Supervising Education Program Specialist</option>
+                                            <option value="Education Supervisor II">Education Supervisor II</option>
+                                            <option value="Education Program Specialist II">Education Program Specialist II</option>
+                                            <option value="Administrative Officer III">Administrative Officer III</option>
+                                            <option value="Administrative Assistant III">Administrative Assistant III</option>
+                                            <option value="Administrative Aide VI">Administrative Aide VI</option>
+                                            <option value="Administrative Aide III">Administrative Aide III</option>
+                                            <option value="Project Technical Staff III">Project Technical Staff III</option>
+                                            <option value="Project Technical Staff II">Project Technical Staff II</option>
+                                            <option value="Project Technical Staff I">Project Technical Staff I</option>
+                                            <option value="Project Support Staff IV">Project Support Staff IV</option>
+                                            <option value="Job Order">Job Order</option>
                                         </select>
                                     </div>
 
                                     <div class="col-lg-6">
-                                        <label for="inputState" class="form-label required">Department</label>
-                                        <select id="inputState" class="form-select">
+                                        <label for="department" class="form-label required">Department</label>
+                                        <select id="department" name="department" class="form-select" >
                                             <option selected>---</option>
-                                            <option>Admin Department</option>
-                                            <option>Technical Department</option>
+                                            <option value="Admin Department">Admin Department</option>
+                                            <option value="Technical Department">Technical Department</option>
                                         </select>
                                     </div>
 
 
                                     <div class="col-lg-6">
-                                        <label for="inputState" class="form-label required">Place of assignment</label>
-                                        <select id="inputState" class="form-select">
+                                        <label for="assignment" class="form-label required">Place of assignment</label>
+                                        <select id="assignment" name="assignment" class="form-select">
                                             <option selected>---</option>
-                                            <option>Null</option>
-                                            <option>Null</option>
-                                            <option>Null</option>
-                                            <option>Null</option>
+                                            <option value="Zamboanga City">Zamboanga City</option>
+                                            <option value="Pagadian City">Pagadian City</option>
                                         </select>
                                     </div>
 
 
 
                                     <div class="col-lg-6">
-                                        <label for="office_mail" class="form-label required">Office Mail</label>
+                                        <label for="office_mail" class="form-label">Office Mail</label>
                                         <input type="email" name="office_mail" class="form-control" id="office_mail">
                                     </div>
 
@@ -157,7 +163,7 @@
 
                                     <div class="col-lg-4">
                                         <label for="mobile_number" class="form-label required">Mobile Number</label>
-                                        <input type="text" name="mobile_number" class="form-control" id="mobile_number">
+                                        <input type="number" name="mobile_number" class="form-control" id="mobile_number">
                                     </div>
 
                                     <div class="col-lg-4">
@@ -172,18 +178,18 @@
                                     </div>
 
                                     <div class="col-lg-4">
-                                        <label for="mobile_number" class="form-label ">CRN</label>
-                                        <input type="text" name="mobile_number" class="form-control" id="mobile_number">
+                                        <label for="crn" class="form-label ">CRN</label>
+                                        <input type="text" name="crn" class="form-control" id="crn">
                                     </div>
 
                                     <div class="col-lg-4">
-                                        <label for="tin" class="form-label ">SSS</label>
-                                        <input type="text" name="tin" class="form-control" id="tin">
+                                        <label for="sss" class="form-label ">SSS</label>
+                                        <input type="text" name="sss" class="form-control" id="sss">
                                     </div>
 
                                     <div class="col-lg-4">
-                                        <label for="gsis" class="form-label ">PhilHealth</label>
-                                        <input type="text" name="gsis" class="form-control" id="gsis">
+                                        <label for="philhealth" class="form-label ">PhilHealth</label>
+                                        <input type="text" name="philhealth" class="form-control" id="philhealth">
                                     </div>
 
                                     <div class="col-lg-6">
@@ -192,13 +198,11 @@
                                     </div>
 
                                     <div class="col-lg-6">
-                                        <label for="inputState" class="form-label required">Employment Status</label>
-                                        <select id="inputState" class="form-select">
+                                        <label for="employment_status" class="form-label required">Employment Status</label>
+                                        <select id="employment_status" name="employment_status" class="form-select">
                                             <option selected>---</option>
-                                            <option>Regular</option>
-                                            <option>JO</option>
-                                            <option>ENDO</option>
-                                            <option>PTS</option>
+                                            <option>Active</option>
+                                            <option>Inactive</option>
                                         </select>
                                     </div>
 
@@ -236,8 +240,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <!-- DataTable -->
                 <div class="table-wrapper">
