@@ -21,7 +21,7 @@
 
         <section class="section employees">
             <div class="card p-3">
-                Damn Sheeeeesh Technical Department hehehehehehe
+                Technical Department
             </div>
         </section>
 
